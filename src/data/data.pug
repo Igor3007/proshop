@@ -1,0 +1,397 @@
+- 
+  const app = {
+
+    mainMenuMobile: [
+
+      { 
+        text: 'Каталог',  
+        href: '/', 
+        icon: false
+      },
+      { 
+        text: 'О компании',  
+        href: '/about.html', 
+        icon: false,
+        sub: [
+          'Сотрудничество с нами',
+          'О компании',
+          'Наши магазины',
+          'Юр. лицам',
+          'Физ. лицам',
+        ]
+      },
+      { 
+        text: 'Информация',  
+        href: 'info.html', 
+        icon: false,
+        sub: [
+          'Как купить',
+          'Возврат товара',
+          'Увидеть товар онлайн',
+          'Доставка и оплата',
+          'Нанесение лого',
+        ]
+      },
+      { 
+        text: 'Контакты',  
+        href: 'contacts.html', 
+        icon: false
+      },
+       
+      
+       
+    ],
+
+    mainMenu: [ 
+     
+      { 
+        text: 'Новинки',  
+        href: '/catalog.html', 
+        icon: false,
+        sub: false
+      },
+      { 
+        text: 'Профессии',  
+        href: '/catalog.html', 
+        icon: false,
+        js: 'professions'
+      },
+      { 
+        text: 'Бренды',  
+        href: '/catalog.html', 
+        icon: false,
+        js: 'brands'
+      },
+      { 
+        text: 'Доставка и примерка',  
+        href: '/catalog.html', 
+        icon: false,
+      },
+      { 
+        text: 'Нанесение логотипа',  
+        href: '/catalog.html', 
+        icon: false,
+      }
+  ]
+  } 
+
+  const catalog = [
+    {
+      image: '/img/catalog/subcat/image357',
+      title: 'Мужская'
+    },
+    {
+      image: '/img/catalog/subcat/image357-1',
+      title: 'Женская'
+    },
+    {
+      image: '/img/catalog/subcat/image357-2',
+      title: 'Аксессуары'
+    },
+    {
+      image: '/img/catalog/subcat/image357-3',
+      title: 'Рабочая обувь'
+    },
+    {
+      image: '/img/catalog/subcat/image357-4',
+      title: 'Рабочая обувь'
+    },
+    {
+      image: '/img/catalog/subcat/image357-5',
+      title: 'Мужская'
+    },
+    {
+      image: '/img/catalog/subcat/image357-6',
+      title: 'Женская'
+    },
+    {
+      image: '/img/catalog/subcat/image357-7',
+      title: 'Аксессуары'
+    },
+    {
+      image: '/img/catalog/subcat/image357-8',
+      title: 'Рабочая обувь'
+    },
+    {
+      image: '/img/catalog/subcat/image357-2',
+      title: 'Рабочая обувь'
+    },
+
+  
+  ];
+
+  
+  const card1 = {
+      title: 'KW 204',
+      id: '12',
+      desc: 'Зимний светоотражающий полукомбинезон Portwest S489, сигнальный желтый/темно-синий',
+      images: [
+         {
+          main: '/img/product/p1',
+          hover: '/img/product/kw204/kw204-red2',
+          color: '123',
+          class: 'is-active',
+          hex: '#405284'
+        },
+        {
+          main: '/img/product/kw204/p2',
+          hover: '/img/product/kw204/kw204-blue2',
+          color: '785',
+          class: false,
+          hex: '#E43A28'
+        },
+        {
+          main: '/img/product/kw204/kw204-gray',
+          hover: '/img/product/kw204/kw204-gray',
+          color: '678',
+          class: false,
+          hex: '#EAEAEA'
+        },
+        {
+          main: '/img/product/kw204/kw204-black',
+          hover: '/img/product/kw204/kw204-black2',
+          color: '354',
+          class: false,
+          hex: '#44454E',
+         
+        },
+        
+      ],
+    };
+ 
+
+  const card2 =   {
+    title: 'KW 204',
+    id: '14',
+    desc: 'Зимний светоотражающий полукомбинезон Portwest S489, сигнальный желтый/темно-синий',
+
+   images: [
+         {
+          main: '/img/product/p2',
+          hover: '/img/product/kw204/kw204-red2',
+          color: '123',
+          class: 'is-active',
+          hex: '#E43A28'
+        },
+        {
+          main: '/img/product/kw204/p2',
+          hover: '/img/product/kw204/kw204-blue2',
+          color: '785',
+          class: false,
+          hex: '#405284'
+        },
+        {
+          main: '/img/product/kw204/kw204-gray',
+          hover: '/img/product/kw204/kw204-gray',
+          color: '678',
+          class: false,
+          hex: '#EAEAEA'
+        },
+        {
+          main: '/img/product/kw204/kw204-black',
+          hover: '/img/product/kw204/kw204-black2',
+          color: '354',
+          class: false,
+          hex: '#44454E',
+         
+        },
+      ]
+
+  };
+
+  const card5 =   {
+    title: 'KW 204',
+    id: '15',
+    desc: 'Зимний светоотражающий полукомбинезон Portwest S489, сигнальный желтый/темно-синий',
+    
+
+    images: [
+      
+      {
+        main: '/img/product/p2',
+        hover: '/img/product/catalog/cat11',
+        color: false,
+        class: 'is-active'
+      }
+      
+    ],
+  };
+
+  const card3 = {
+    title: 'KW 204',
+    id: '16',
+    desc: 'Зимний светоотражающий полукомбинезон Portwest S489, сигнальный желтый/темно-синий',
+    type: 'minicard--large',
+    oldprice: '18200',
+
+
+    images: [
+      {
+        main: '/img/product/img-minicard-lg2',
+        hover: '/img/product/cat3',
+        color: 'f00',
+        class: 'is-active',
+        hex: '#E43A28'
+      },
+      {
+        main: '/img/product/kw204/p2',
+        hover: '/img/product/kw204/kw204-blue2',
+        color: '785',
+        class: false,
+        hex: '#405284'
+      },
+      
+    ],
+  };
+
+  const card6 = {
+    title: 'KW 204',
+    id: '16',
+    desc: 'Зимний светоотражающий полукомбинезон Portwest S489, сигнальный желтый/темно-синий',
+    type: 'minicard--large',
+    oldprice: '18700',
+
+
+    images: [
+      {
+        main: '/img/product/img-minicard-lg',
+        hover: '/img/product/cat3',
+        color: '000',
+        class: 'is-active',
+        hex: '#405284'
+      }
+      
+    ],
+  };
+
+  const card4 =   {
+    title: 'KW 204',
+    id: '17',
+    desc: 'Зимний светоотражающий полукомбинезон Portwest S489, сигнальный желтый/темно-синий',
+
+    images: [
+      {
+        main: '/img/product/p2',
+        hover: '/img/product/ks223/ks223-2',
+        color: false,
+        class: 'is-active'
+      }
+      
+    ],
+  };
+
+  const card9 = {
+    title: 'KW 204',
+    id: '16',
+    desc: 'Зимний светоотражающий полукомбинезон Portwest S489, сигнальный желтый/темно-синий',
+    oldprice: '22400',
+
+
+    images: [
+      {
+        main: '/img/product/p9',
+        hover: '/img/product/cat3',
+        color: '000',
+        class: 'is-active',
+        hex: '#FC4646'
+      }
+      
+    ],
+  };
+
+  const products = [
+    card1, 
+    card2, 
+    card2, 
+    card2, 
+    card2, 
+    card2, 
+    
+    card1, 
+    card2, 
+    
+    ]; 
+
+  const products2 = [
+    card1, 
+    card9, 
+    card2, 
+    card2, 
+    card2, 
+    card2, 
+    card3,
+    card6,
+    card1, 
+    card2, 
+    
+    ]; 
+
+  const categories = [
+    card1, 
+    card2, 
+    card2, 
+    card2, 
+    card2, 
+    card2, 
+  ];
+
+       
+  const brands = [
+      '/img/brands/image1.png',
+      '/img/brands/image2.png',
+      '/img/brands/image3.png',
+      '/img/brands/image4.png',
+      '/img/brands/image5.png',
+      '/img/brands/image6.png',
+      '/img/brands/image7.png',
+      '/img/brands/image1.png',
+      '/img/brands/image2.png',
+      '/img/brands/image3.png',
+      '/img/brands/image4.png',
+      '/img/brands/image5.png',
+      '/img/brands/image6.png',
+      '/img/brands/image7.png',
+  ]
+
+  const professions = [
+     {
+      img: '/img/product/prof/Group1321314603.jpg',
+      span: 'Автомеханик'
+    },
+
+    {
+      img: '/img/product/prof/Group1321314603-1.jpg',
+      span: 'Mаляр'
+    },
+
+    {
+      img: '/img/product/prof/Group1321314603-2.jpg',
+      span: 'Автомеханик'
+    },
+
+    {
+      img: '/img/product/prof/Group1321314603-3.jpg',
+      span: 'Cварщик'
+    },
+
+    {
+      img: '/img/product/prof/Group1321314603-4.jpg',
+      span: 'Водитель'
+    },
+
+    {
+      img: '/img/product/prof/Group1321314603-2.jpg',
+      span: 'Электрик'
+    },
+   
+  ]
+
+
+    const newsdetails = [
+    card1, 
+    card2, 
+    card1, 
+    card1, 
+   
+    ];
+

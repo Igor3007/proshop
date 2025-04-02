@@ -1,0 +1,47 @@
+mixin item-contact(data)
+  .item-contact
+    .item-contact__icon: +bgimage(data.icon)
+    .item-contact__main
+      .item-contact__label= data.label
+      .item-contact__link: a(href=data.link)= data.text
+ 
+mixin main-menu(data)
+  .main-menu(data-menu="container")
+    .main-menu__wrp
+      .main-menu__close(data-menu="close"): +icons('#ic_cross', 35)
+      .main-menu__nav
+        nav
+          ul
+            each item,index in app.mainMenuMobile
+
+              li(class=""+(item.sub ? 'isset-sub':'')+"" + (index==1 ? ' is-open': ''))
+                if item.icon
+                  a(href=item.href)
+                    if item.icon
+                      +icons(item.icon)
+                    span= item.text
+                else
+                  a(href=item.href)= item.text
+
+                if(item.sub)
+                  ul.sub-menu
+                    each sub in item.sub
+                      li(class=""+(item.multi ? 'isset-sub':'')+"")
+                        a(href='#')= sub
+                        if(item.multi)
+                          ul.sub-menu
+                            each multi in item.multi
+                              li: a(href="#")= multi
+      .main-menu__contact
+        .menu-bottom
+          .menu-bottom__left
+            .menu-bottom__region
+              span(data-region="open-window") г. Санкт-Петербург
+            .menu-bottom__phone
+              a(href='tel:+7 812 307 80 28') +7 812 307 80 28
+            .menu-bottom__email
+              a(href='mailto:zakaz@ag-technologies.ru') zakaz@ag-technologies.ru
+
+          .menu-bottom__right
+            a(href='#'): +icons('#ic_tg-dark', 28)
+            a(href='#'): +icons('#ic_wa-dark', 28)

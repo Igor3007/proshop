@@ -1,0 +1,12 @@
+mixin faq(data)
+  .faq
+    each item, index in data
+      .faq__item
+        .faq-item
+          .faq-item__question
+
+            .faq-item__title= item.title
+            .faq-item__arrow
+              .icon-cross-border: .icon-cross
+          .faq-item__answer
+            p!= item.answer

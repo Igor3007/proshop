@@ -1,0 +1,126 @@
+.section-page-404 {
+    padding: 45px 0;
+
+    @media screen and (min-width: $w992) {
+        padding: 45px 0;
+    }
+
+    @media screen and (min-width: $w1440) {
+        padding: 70px 0 45px 0;
+    }
+}
+
+.page-404 {
+
+    display: flex;
+    flex-direction: column;
+
+
+    &__title {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--accent);
+        text-align: center;
+        padding-bottom: 60px;
+        line-height: 127%;
+
+        @media screen and (max-width: $w480) {
+
+            padding-bottom: 40px;
+
+            & br {
+                display: none;
+            }
+        }
+    }
+
+    &__label {
+        font-size: 17px;
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 45px;
+
+        @media screen and (max-width: $w480) {
+            order: -1;
+        }
+
+    }
+}
+
+
+.catalog-category--ext {
+
+    max-width: 1305px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+
+    & .catalog-category {
+        &__subcat ul {
+
+            justify-content: center;
+
+            @media screen and (max-width: $w1024) {
+                max-width: 785px;
+                margin: 0 auto;
+            }
+
+            & li {
+
+                display: block;
+
+                @media screen and (min-width: $w1200) {
+                    width: calc(20% - 12px);
+                }
+
+                @media screen and (min-width: $w760) {
+                    width: calc(33.33% - 12px);
+                }
+
+                @media screen and (max-width: $w480) {
+
+
+                    width: calc(100% - 12px);
+                    flex-basis: 150px;
+                    flex-grow: 1;
+
+
+
+                    & a {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+
+                        & .image-main {
+                            margin-top: auto;
+                        }
+                    }
+
+
+                    &:nth-child(2),
+                    &:nth-child(1) {
+                        width: 100%;
+                        flex-basis: auto;
+
+                        & a {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: row;
+                        }
+
+                        & .image-main {
+                            margin-right: 0;
+                            max-width: 110px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

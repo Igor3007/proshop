@@ -1,0 +1,188 @@
+ .pagination {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     width: 100%;
+
+     @media screen and (max-width: $w480) {
+         flex-wrap: wrap;
+         flex-direction: column;
+     }
+
+     &__page {
+
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         padding: 24px 0;
+
+         & ul {
+             display: flex;
+             list-style-type: none;
+
+             & li {
+
+                 margin: 0 4px;
+
+                 @media screen and (max-width: $w576) {
+                     display: none;
+
+                     &:nth-last-child(2),
+                     &:last-child,
+                     &:nth-child(5),
+                     &:nth-child(4),
+                     &:nth-child(3),
+                     &:nth-child(2),
+                     &:nth-child(1) {
+                         display: block;
+                     }
+
+                 }
+
+                 & span,
+                 & a {
+                     width: rem(40);
+                     height: rem(40);
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     color: #000;
+                     font-size: 14px;
+                     font-weight: 600;
+                     background-color: transparent;
+                     border-radius: 50px;
+                     transition: 0.3s ease;
+
+                     @media screen and (min-width: $w992) {
+                         width: rem(37);
+                         height: rem(37);
+                         font-size: 16px;
+                     }
+
+                     & svg {
+                         fill: var(--accent);
+                         min-width: 40px;
+                         height: 40px;
+                     }
+
+                     &:hover {
+                         background-color: var(--bg);
+                         color: var(--accent);
+
+                         & svg {
+                             fill: #fff;
+                         }
+                     }
+                 }
+
+                 & span {
+                     pointer-events: none;
+                 }
+
+                 &.active a {
+                     background-color: var(--bg);
+                     color: var(--accent);
+
+                     & svg {
+                         fill: #fff;
+
+                     }
+                 }
+
+                 &.next,
+                 &.prev {
+
+                     & a {
+                         background-color: transparent;
+
+
+                         & svg {
+                             fill: var(--accent);
+                         }
+
+                         &:hover {
+                             background-color: var(--bg);
+
+
+                             & svg {
+                                 fill: var(--accent);
+                             }
+                         }
+                     }
+
+                     & span {
+                         background-color: transparent;
+
+
+                         & svg {
+                             opacity: 0.5;
+                         }
+                     }
+
+                     & a:not(:hover) {
+                         @media screen and (max-width: $w576) {
+                             background-color: transparent;
+                         }
+                     }
+                 }
+
+             }
+         }
+
+     }
+
+     &__more {
+
+         width: 100%;
+
+         @media screen and (max-width: $w480) {
+             padding-bottom: 24px;
+
+         }
+
+         & .btn {
+             width: 100%;
+             background-color: var(--accent);
+             color: #fff;
+             margin: 0 auto;
+             max-width: 275px;
+             font-family: var(--font-montserrat);
+             font-size: 17px;
+
+             letter-spacing: -3%;
+
+             @media screen and (min-width: $w992) {
+                 max-width: 500px;
+             }
+
+             &:hover {
+                 background-color: var(--bg);
+                 color: var(--accent);
+             }
+
+         }
+     }
+
+     &--showmore {
+         & .pagination {
+             &__page {
+                 width: auto;
+             }
+         }
+     }
+
+     &__total {
+         color: #000;
+         white-space: nowrap;
+
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+ }
+
+ .card-review__project * {
+     margin: 0;
+ }

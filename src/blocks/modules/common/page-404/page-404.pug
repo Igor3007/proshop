@@ -1,0 +1,23 @@
+mixin page-404
+  section.section-page-404
+    .container
+      .page-404 
+        .page-404__title Указан некорректный адрес страницы <br> или она больше не существует
+        .page-404__image
+          picture
+            img(src="/img/icons/404.svg")
+        .page-404__label Продолжите поиск в каталоге
+
+  section.catalog-category.catalog-category--ext
+    .container
+      .catalog-category__subcat
+        ul.dragscroll
+            each item in catalog.slice(0,9)
+                li: a(href='category.html')
+                        div.title-subcat= item.title
+                        div.image-main: +picture(item.image)
+
+        .subcat-show-more(data-isopen="catalog-category__subcat") Показать все
+
+          
+        

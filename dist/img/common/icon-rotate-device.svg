@@ -1,0 +1,29 @@
+<svg width="219" height="179" viewBox="0 0 219 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M217.5 122L186 127.5L191 95.5C191.833 96 194.6 98.2 199 103C209.4 80.6 198 61 191 54C191.833 53.1667 195 50.1 201 44.5C225.8 68.5 216.667 100.833 209 114L217.5 122Z" fill="black"/>
+<path d="M217.5 122L186 127.5L191 95.5C191.833 96 194.6 98.2 199 103C209.4 80.6 198 61 191 54C191.833 53.1667 195 50.1 201 44.5C225.8 68.5 216.667 100.833 209 114L217.5 122Z" stroke="black"/>
+<path d="M217.5 122L186 127.5L191 95.5C191.833 96 194.6 98.2 199 103C209.4 80.6 198 61 191 54C191.833 53.1667 195 50.1 201 44.5C225.8 68.5 216.667 100.833 209 114L217.5 122Z" stroke="black" stroke-opacity="0.2"/>
+<path d="M1.99999 62.5L33.5 57L28.5 89C27.6667 88.5 24.9 86.3 20.5 81.5C10.1 103.9 21.5 123.5 28.5 130.5C27.6667 131.333 24.5 134.4 18.5 140C-6.3 116 2.83333 83.6667 10.5 70.5L1.99999 62.5Z" fill="black"/>
+<path d="M1.99999 62.5L33.5 57L28.5 89C27.6667 88.5 24.9 86.3 20.5 81.5C10.1 103.9 21.5 123.5 28.5 130.5C27.6667 131.333 24.5 134.4 18.5 140C-6.3 116 2.83333 83.6667 10.5 70.5L1.99999 62.5Z" stroke="black"/>
+<path d="M1.99999 62.5L33.5 57L28.5 89C27.6667 88.5 24.9 86.3 20.5 81.5C10.1 103.9 21.5 123.5 28.5 130.5C27.6667 131.333 24.5 134.4 18.5 140C-6.3 116 2.83333 83.6667 10.5 70.5L1.99999 62.5Z" stroke="black" stroke-opacity="0.2"/>
+<rect x="58" width="102" height="179" rx="12" fill="black" fill-opacity="0.9"/>
+<rect x="95" y="9" width="28" height="3" rx="1.5" fill="white"/>
+<circle cx="109" cy="166" r="6" fill="white"/>
+<rect x="66" y="18" width="86" height="138" fill="white"/>
+<style xmlns="" type="text/css" id="custom-css-injector">.pdf-viewer.pdf-viewer--load {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+	opacity: 1 !important;
+}
+
+.pdf-viewer__file {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+
+.fm-pdf__page {
+	 
+	height: 951px;
+ 
+}</style></svg>
