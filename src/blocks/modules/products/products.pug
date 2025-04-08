@@ -1,0 +1,39 @@
+mixin products
+  section.products
+    .products__container._container
+      h1 Акустические панели
+      .products__filter.filter-products
+        .filter-products__buttons
+          .filter-products__button.btn-filter(data-target="filter")
+            i.icon(style="background-image: url(\'/images/icons/ic_filter.svg\')")
+            | Фильтры
+
+          .filter-products__button.
+            Цена
+            
+          .filter-products__button.
+            Цвет
+            
+          .filter-products__button.
+            Форма
+            
+          .filter-products__button.btn-stock
+            .btn-stock__tumbler
+              span
+            | В наличии
+
+          .filter-products__result.
+            
+            Найдено 14
+            
+        .filter-products__default
+          .filter-products__default-value Сначала популярные
+          i.icon(style="background-image: url(\'/images/icons/ic_arrow-dd.svg\')")
+      .products__cards
+        +product-card
+        +product-card--2
+        +product-card--3
+        
+        
+    
+    @@include('html/components/filter/filter-panel.html')

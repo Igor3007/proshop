@@ -1,1 +1,104 @@
-.header header
+include parts.pug
+include ../../catalog-list/catalog-list.pug
+include ../../mobile-menu/mobile-menu.pug
+include ../../search-field/search-field.pug
+
+header.header
+  .header__wrapper
+    .header__top.top-header
+      .top-header__container._container
+        .top-header__wrapper
+          .top-header__country.country-header
+            .country-header__title.get-modal--cities
+              i.icon(style="background-image: url(\'/img/icons/ic_geo.svg\')")
+              span.name Выберите город
+              i.icon(style="background-image: url(\'/img/icons/ic_arrow-dd.svg\')")
+          .top-header__actions
+            .top-header__actions-info.info-action
+              .info-action__title
+                span.name Покупателям
+                i.icon(style="background-image: url(\'/img/icons/ic_arrow-dd.svg\')")
+              +data-dropdown-menu
+
+            .top-header__actions-numbers.numbers-action
+              .numbers-action__title
+                i.icon(style="background-image: url(\'/img/icons/ic_phone.svg\')")
+                a.name(href="tel:+78002001234") +7 (800) 200-12-34
+                i.icon(style="background-image: url(\'/img/icons/ic_arrow-dd.svg\')")
+              +data-dropdown-numbers
+
+    .header__main.main-header
+      .main-header__container._container
+        .main-header__wrapper
+          .main-header__actions
+            .main-header__menu.menu-header
+              .menu-header__btn(data-target="menu")
+                span.icon
+                  i
+                  i
+                  i
+            .main-header__logo
+              a(href="/", aria-label="home")
+                i.icon(style="background-image: url(\'/img/icons/ic_logo.svg\')")
+            .main-header__catalog.catalog-btn
+              .catalog-btn__btn(data-target="catalog")
+                span.icon
+                  i
+                  i
+                  i
+                .catalog-btn__btn-name Каталог
+            .main-header__links
+              a(href="#") Наши магазины
+            .main-header__search
+              .search-index(data-target="search")
+                form(action="#")
+                  .search-index__form
+                    .search-index__field
+                      label.search-index__input
+                        input(type="text", name="q", autocomplete="off", placeholder="Найти в каталоге")
+                      .search-index__btn
+                        button.btn-blue Найти
+                        button.btn-search
+                          i.icon(style="background-image: url(\'./img/icons/ic_search.svg\')")
+            .main-header__info
+              ul
+                li
+                  a(href="tel:+78002001234")
+                    i.icon(style="background-image: url(\'/img/icons/ic_phone.svg\')")
+                li.get-modal--cities
+                  a(href="#")
+                    i.icon(style="background-image: url(\'/img/icons/ic_geo.svg\')")
+          .main-header__panel
+            button.panel-custom_i.btn-login
+              i.icon(style="background-image: url(\'./img/icons/ic_user.svg\')")
+              | Войти
+
+            button.panel-custom_i.btn-select
+              i.icon(style="background-image: url(\'./img/icons/ic_select.svg\')")
+              | Избранное
+
+            .main-header__cart.cart-header
+              button.panel-custom_i.btn-cart
+                i.icon(style="background-image: url(\'./img/icons/ic_cart.svg\')")
+                | Корзина
+
+    .header__bottom.bottom-header
+      .bottom-header__container._container
+        .bottom-header__wrapper
+          ul
+            li
+              i.icon(style="background-image: url(\'/img/icons/ic_sale.svg\')")
+              a(href="#") Чёрная пятница
+            li
+              a(href="#") До -40% на все футболки
+            li
+              a(href="#") Специальные предложения
+            li
+              a(href="#") Коллекция «Новогодняя»
+            li
+              a(href="#") Новинки
+            li
+              a(href="#") Ликвидация
+  +mobile-menu
+  +catalog-list
+  +search-field

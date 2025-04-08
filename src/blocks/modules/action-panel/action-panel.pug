@@ -1,0 +1,24 @@
+mixin action-panel
+  .action-panel
+    ._container.action-panel__container
+      .action-panel__config.config-action
+        .config-action__btn.config-catalog(data-target="catalog")
+          .config-action__icon
+            i.icon(style="background-image: url(\'/img/icons/ic_a-catalog.svg\')")
+          .config-action__name Каталог
+        .config-action__btn.config-login(data-target="login")
+          .config-action__icon
+            i.icon(style="background-image: url(\'/img/icons/ic_a-login.svg\')")
+          .config-action__name Войти
+        .config-action__btn.config-favourite(data-target="favourite")
+          .config-action__icon
+            i.icon(style="background-image: url(\'/img/icons/ic_a-favourite.svg\')")
+            .count
+              span 0
+          .config-action__name Избранное
+        .config-action__btn.config-cart(data-target="cart")
+          .config-action__icon
+            i.icon(style="background-image: url(\'/img/icons/ic_a-cart.svg\')")
+            .count
+              span 0
+          .config-action__name Корзина

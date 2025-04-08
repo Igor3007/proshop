@@ -1,0 +1,67 @@
+mixin simple-card-product(data)
+  .simple-card-product
+    .simple-card-product__img
+      picture
+        a(href='single-product.html'): img(src=data.image, alt="")
+    .simple-card-product__content
+      .simple-card-product__content-name
+        a(href='single-product.html')= data.title
+      .simple-card-product__content-price!=data.price + '<span>'+data.discount+'</span>'
+
+
+
+mixin search-field
+  -
+    const simple_product = [
+      { "image": "/img/products/i_product-a001.jpg", "title": "Смартфон SY 17", "price": "37 800 ₽", "discount": "42 000 ₽" },
+      { "image": "/img/products/i_product-a002.jpg", "title": "Смартфон Nika Premium Синий", "price": "50 400 ₽", "discount": "" },
+      { "image": "/img/products/i_product-a003.jpg", "title": "Смартфон Nika HR", "price": "22 560 ₽", "discount": "" }
+    ]
+
+  .search-field(data-window="search")
+    .search-field__container._container
+      .search-field__wrapper
+        .search-field__heading
+          .search-index
+            form(action="#")
+              .search-index__form
+                .search-index__field
+                  label.search-index__input
+                    input(type="text", name="q", autocomplete="off", placeholder="Найти в каталоге")
+                  .search-index__btn
+                    button.btn-search
+                      i.icon(style="background-image: url(\'./images/icons/ic_search.svg\')")
+
+          .search-field__heading-close(data-close="close")
+            i.icon(style="background-image: url(\'/img/icons/ic_close.svg\')")
+        .search-field__links
+          .search-field__links-search
+            .search-field__links-search-name Часто ищут
+            ul
+              li
+                a(href="#") мобильный телефон
+              li
+                a(href="#") автомобиль
+          .search-field__links-search
+            .search-field__links-search-name Найдено в категориях
+            ul
+              li
+                a(href="#")
+                  | мобил
+                  span В категории «Электроника»
+              li
+                a(href="#")
+                  | мобил
+                  span В категории «Авто и мото»
+              li
+                a(href="#")
+                  | мобил
+                  span В категории «Для детей»
+        .search-field__show
+          .search-field__show-name Популярные товары
+          .search-field__show-products
+            
+            each item in simple_product
+              +simple-card-product(item)
+        .search-field__search
+          button.btn-blue Найти

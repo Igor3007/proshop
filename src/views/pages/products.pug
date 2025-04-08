@@ -1,0 +1,17 @@
+extends ../layouts/main
+
+block variables
+  include ../../data/data.pug
+  - const title = "Proshop - Товары"
+ 
+
+block main
+
+    include ../../blocks/modules/products/products.pug
+ 
+
+ 
+block scripts
+  script(src="/js/vendor.js") 
+  script(src="/js/common.js") 
+  script(src="/js/catalog.js") 

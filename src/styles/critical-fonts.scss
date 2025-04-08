@@ -1,87 +1,31 @@
 @font-face {
-    font-family: 'Involve SemiBold Oblique';
-    src: url('/fonts/involve/subset-Involve-SemiBoldOblique.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-SemiBoldOblique.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
+    font-family: Inter;
+    font-display: swap;
+    src: url("/fonts/inter/Inter-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Involve Medium Oblique';
-    src: url('/fonts/involve/subset-Involve-MediumOblique.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-MediumOblique.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Involve';
-    src: url('/fonts/involve/subset-Involve-SemiBold.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-SemiBold.woff') format('woff');
+    font-family: Inter;
+    font-display: swap;
+    src: url("/fonts/inter/Inter-SemiBold.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Involve';
-    src: url('/fonts/involve/subset-Involve-Medium.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-Medium.woff') format('woff');
+    font-family: Inter;
+    font-display: swap;
+    src: url("/fonts/inter/Inter-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Involve';
-    src: url('/fonts/involve/subset-Involve-Oblique.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-Oblique.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Involve';
-    src: url('/fonts/involve/subset-Involve-Bold.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Involve Bold Oblique';
-    src: url('/fonts/involve/subset-Involve-BoldOblique.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-BoldOblique.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Involve';
-    src: url('/fonts/involve/subset-Involve-Regular.woff2') format('woff2'),
-        url('/fonts/involve/subset-Involve-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/montserrat/subset-Montserrat-Regular.woff2') format('woff2'),
-        url('/fonts/montserrat/subset-Montserrat-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/montserrat/subset-Montserrat-Medium.woff2') format('woff2'),
-        url('/fonts/montserrat/subset-Montserrat-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('/fonts/montserrat/subset-Montserrat-SemiBold.woff2') format('woff2'),
-        url('/fonts/montserrat/subset-Montserrat-SemiBold.woff') format('woff');
-    font-weight: 600;
+    font-family: Inter;
+    font-display: swap;
+    src: url("/fonts/inter/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
     font-style: normal;
 }

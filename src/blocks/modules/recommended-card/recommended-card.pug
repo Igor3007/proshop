@@ -1,0 +1,10 @@
+mixin recommended-card(data)
+  .recommended-card
+    .recommended-card__img
+      picture
+        img(src=data.image, alt="")
+    .recommended-card__info
+      span=data.sale
+    .recommended-card__content
+      h3= data.title
+      p= data.text

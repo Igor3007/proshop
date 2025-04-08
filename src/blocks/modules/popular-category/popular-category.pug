@@ -1,0 +1,69 @@
+mixin popular-category-card-gray(data)
+ a.popular-category__card.card--gy(href="#")
+  .popular-category__card-img
+    picture
+      img(src=data.image)
+  .name= data.title
+
+mixin popular-category
+
+  - 
+    const cartPopular = [
+      { "image": "/img/exclusive/i_exclusive-b001.jpg", "title": "Rendered size: 412 × 272 px" },
+      { "image": "/img/category/img_category-w.png", "title": "Косметика" },
+      { "image": "/img/category/img_category-e.png", "title": "Обувь" },
+      { "image": "/img/category/img_category-r.png", "title": "Одежда" },
+      { "image": "/img/category/img_category-t.png", "title": "Электроника" },
+      { "image": "/img/category/img_category-y.png", "title": "Стройматериалы" },
+      { "image": "/img/category/img_category-u.png", "title": "Товары для дома" },
+      { "image": "/img/category/img_category-i.png", "title": "Творчество" },
+      { "image": "/img/category/img_category-o.png", "title": "Авто и мото" },
+      { "image": "/img/category/img_category-a.png", "title": "" },
+      { "image": "/img/category/img_category-s.png", "title": "" },
+      { "image": "/img/category/img_category-d.png", "title": "" },
+
+      { "image": "/img/category/img_category-q.png", "title": "Спорт и отдых" },
+      { "image": "/img/category/img_category-w.png", "title": "Косметика" },
+      { "image": "/img/category/img_category-e.png", "title": "Обувь" },
+      { "image": "/img/category/img_category-r.png", "title": "Одежда" },
+      { "image": "/img/category/img_category-t.png", "title": "Электроника" },
+      { "image": "/img/category/img_category-y.png", "title": "Стройматериалы" },
+      { "image": "/img/category/img_category-u.png", "title": "Товары для дома" },
+      { "image": "/img/category/img_category-i.png", "title": "Творчество" },
+      { "image": "/img/category/img_category-o.png", "title": "Авто и мото" },
+      { "image": "/img/category/img_category-a.png", "title": "" },
+      { "image": "/img/category/img_category-s.png", "title": "" },
+      { "image": "/img/category/img_category-d.png", "title": "" },
+
+      { "image": "/img/category/img_category-q.png", "title": "Спорт и отдых" },
+      { "image": "/img/category/img_category-w.png", "title": "Косметика" },
+      { "image": "/img/category/img_category-e.png", "title": "Обувь" },
+      { "image": "/img/category/img_category-r.png", "title": "Одежда" },
+      { "image": "/img/category/img_category-t.png", "title": "Электроника" },
+      { "image": "/img/category/img_category-y.png", "title": "Стройматериалы" },
+      { "image": "/img/category/img_category-u.png", "title": "Товары для дома" }
+    ]
+
+  section.popular-category
+    .popular-category__container._container
+      h2 Популярные категории
+      .popular-category__custom-tabs.tabs-custom
+        .tabs-custom__tabs
+          .tabs-custom__tab.active-tab(data-tab="tab1")
+            span Светлый фон
+          .tabs-custom__tab(data-tab="tab2")
+            span Белый фон с обводкой
+          .tabs-custom__tab(data-tab="tab3")
+            span Заполненные фото
+        #tab1.tabs-custom__tab-content.active-content
+          .swiper(data-slider="popular-category")
+            .swiper-wrapper
+              each item in cartPopular
+                .swiper-slide
+                  +popular-category-card-gray(item)
+              
+            .swiper-scrollbar(data-swiper-scrollbar="popular-category-sb")
+            .swiper-button-prev(data-swiper-btn="popular-category-prev")
+              span(style="background-image: url(\'/img/icons/ic_arrow-rt.svg\')")
+            .swiper-button-next(data-swiper-btn="popular-category-next")
+              span(style="background-image: url(\'/img/icons/ic_arrow-rt.svg\')")

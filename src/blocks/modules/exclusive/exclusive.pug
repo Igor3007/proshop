@@ -1,0 +1,22 @@
+include ../product-card/product-card.pug
+
+mixin exclusive(data)
+  section.exclusive
+    .exclusive__container._container
+      h2=data.title
+      .exclusive__slider
+        .swiper(data-slider="exclusive")
+          .swiper-wrapper
+              .swiper-slide: +product-card
+              .swiper-slide: +product-card--3
+              .swiper-slide: +product-card--2
+              .swiper-slide: +product-card
+              .swiper-slide: +product-card--3
+              .swiper-slide: +product-card
+              .swiper-slide: +product-card--2
+              
+          .swiper-scrollbar(data-swiper-scrollbar="exclusive-sb")
+          .swiper-button-prev(data-swiper-btn="exclusive-prev")
+            span(style="background-image: url(\'/img/icons/ic_arrow-rt.svg\')")
+          .swiper-button-next(data-swiper-btn="exclusive-next")
+            span(style="background-image: url(\'/img/icons/ic_arrow-rt.svg\')")

@@ -1,0 +1,50 @@
+.recommended {
+    overflow: hidden;
+
+    .swiper[data-slider="recommended"] {
+        overflow: initial;
+        padding-bottom: 32px;
+
+        @media screen and (min-width: 991.98px) {
+            padding-bottom: 40px;
+        }
+
+        .swiper-slide {
+            max-width: 298px;
+
+            @media screen and (min-width: 991.98px) {
+                max-width: 560px;
+            }
+        }
+
+    }
+
+    &__heading {
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 991.98px) {
+            margin-bottom: 40px;
+            max-width: calc(50% + 250px);
+        }
+
+        h2 {
+            margin-bottom: 12px;
+
+            @media screen and (min-width: 991.98px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000;
+
+            @media screen and (min-width: 991.98px) {
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+    }
+}

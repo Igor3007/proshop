@@ -1,0 +1,240 @@
+mixin product-card(data)
+  .product-card
+    .product-card__body
+      .product-card__heading
+        .product-card__heading-images
+          .product-card__heading-images-item.is--active(data-image-color="333")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-a001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-b001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-c001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-d001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="666")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-e001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-e001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="444")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-a001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-a001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="555")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-e001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-e001.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+        .product-card__heading-discount
+          span -10%
+        .product-card__heading-actions
+          button(data-target="discount")
+            i.icon(style="background-image: url(\'./img/icons/ic_discount.svg\')")
+          button(data-target="like")
+            i.icon(style="background-image: url(\'./img/icons/ic_like.svg\')")
+      .product-card__action.product-action
+        a.product-action-name(href="#") Умные часы Bambo-900 зелёный
+        span.product-action-model Nika
+        .product-action-price
+          span.price-current(style="color: #D61111") 11 520 ₽
+          span.price-discount 12 800 ₽
+        .product-card__color
+          ul
+            li.is--active(data-color="333")
+              label
+                input(type="radio", name="color", value="lightgreen")
+                span(title="Lightgreen", style="background-color: #A0C3B5")
+            li(data-color="666")
+              label
+                input(type="radio", name="color", value="lightpink")
+                span(title="Lightpink", style="background-color: #E2C8D3")
+            li(data-color="444")
+              label
+                input(type="radio", name="color", value="lightblue")
+                span(title="Lightblue", style="background-color: #8FD6D6")
+            li(data-color="555")
+              label
+                input(type="radio", name="color", value="pink")
+                span(title="Pink", style="background-color: #DAB0F1")
+    .product-card__btns
+      button.btn-blue В корзину
+      button.btn-l-gray Подробнее о товаре
+
+
+mixin product-card--3(data)
+  .product-card
+    .product-card__body
+      .product-card__heading
+        .product-card__heading-images
+          .product-card__heading-images-item.is--active(data-image-color="333")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="666")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="444")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="555")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/in-stock/i_in-stock-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+        .product-card__heading-discount
+          span Хит
+        .product-card__heading-actions
+          button(data-target="discount")
+            i.icon(style="background-image: url(\'./img/icons/ic_discount.svg\')")
+          button(data-target="like")
+            i.icon(style="background-image: url(\'./img/icons/ic_like.svg\')")
+      .product-card__action.product-action
+        a.product-action-name(href="#") Босоножки женские 39
+        span.product-action-model Жерко
+        .product-action-price
+          span.price-current 3 840 ₽
+        .product-card__color
+          ul
+            li.is--active(data-color="333")
+              label
+                input(type="radio", name="color", value="lightgreen")
+                span(title="Lightgreen", style="background-color: #A0C3B5")
+            li(data-color="666")
+              label
+                input(type="radio", name="color", value="lightpink")
+                span(title="Lightpink", style="background-color: #E2C8D3")
+            li(data-color="444")
+              label
+                input(type="radio", name="color", value="lightblue")
+                span(title="Lightblue", style="background-color: #8FD6D6")
+            li(data-color="555")
+              label
+                input(type="radio", name="color", value="pink")
+                span(title="Pink", style="background-color: #DAB0F1")
+        .product-card__size
+          .product-card__size-title Размер:
+          ul
+            li
+              span 37
+            li
+              span 38
+            li.active
+              span 39
+    .product-card__btns
+      button.btn-blue В корзину
+      button.btn-l-gray Подробнее о товаре
+mixin product-card--2(data)
+  .product-card
+    .product-card__body
+      .product-card__heading
+        .product-card__heading-images
+          .product-card__heading-images-item.is--active(data-image-color="333")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="666")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="444")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+          .product-card__heading-images-item(data-image-color="555")
+            .product-card__heading-images-item-img.active
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img
+              picture
+                img(src="/img/exclusive/i_exclusive-a003.jpg", loading="lazy", alt="image")
+            .product-card__heading-images-item-img-pagination
+        .product-card__heading-discount
+          span Хит
+        .product-card__heading-actions
+          button(data-target="discount")
+            i.icon(style="background-image: url(\'./img/icons/ic_discount.svg\')")
+          button(data-target="like")
+            i.icon(style="background-image: url(\'./img/icons/ic_like.svg\')")
+      .product-card__action.product-action
+        a.product-action-name(href="#") Обеденная тарелка Shouldplat
+        span.product-action-model Gold Swan
+        .product-action-price
+          span.price-current 980 ₽
+        .product-card__color
+          ul
+            li.is--active(data-color="333")
+              label
+                input(type="radio", name="color", value="lightgreen")
+                span(title="Lightgreen", style="background-color: #A0C3B5")
+            li(data-color="666")
+              label
+                input(type="radio", name="color", value="lightpink")
+                span(title="Lightpink", style="background-color: #E2C8D3")
+            li(data-color="444")
+              label
+                input(type="radio", name="color", value="lightblue")
+                span(title="Lightblue", style="background-color: #8FD6D6")
+            li(data-color="555")
+              label
+                input(type="radio", name="color", value="pink")
+                span(title="Pink", style="background-color: #DAB0F1")
+    .product-card__btns
+      button.btn-blue В корзину
+      button.btn-l-gray Подробнее о товаре

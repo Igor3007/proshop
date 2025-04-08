@@ -1,0 +1,152 @@
+include ../recommended-card/recommended-card.pug
+
+mixin catalog-list
+  .catalog-list(data-window="catalog")
+    .catalog-list__container._container
+      .catalog-list__heading
+        .catalog-list__heading-back(data-back="back")
+          i.icon(style="background-image: url(\'/img/icons/ic_back.svg\')")
+        .search-index
+          form(action="#")
+            .search-index__form
+              .search-index__field
+                label.search-index__input
+                  input(type="text", name="q", autocomplete="off", placeholder="Найти в каталоге")
+                .search-index__btn
+                  button.btn-search
+                    i.icon(style="background-image: url(\'./img/icons/ic_search.svg\')")
+        .catalog-list__heading-close(data-close="close")
+          i.icon(style="background-image: url(\'/img/icons/ic_close.svg\')")
+      .catalog-list__wrapper
+        .catalog-list__links
+          ul
+            li.is-active(data-target="1")
+              span Электроника
+              i.icon(style="background-image: url(\'/img/icons/ic_chevron-rt.svg\')")
+            li(data-target="2")
+              span Электроника1
+              i.icon(style="background-image: url(\'/img/icons/ic_chevron-rt.svg\')")
+            li(data-target="3")
+              span Электроника2
+              i.icon(style="background-image: url(\'/img/icons/ic_chevron-rt.svg\')")
+          .catalog-list__links-all
+            a(href="#") Весь каталог
+        .catalog-list__info
+          .catalog-list__info-item.is-active(data-target="1")
+            .title Электроника
+            .catalog-list__info-item-scroll
+              .catalog-list__info-item-content
+                .list
+                  ul
+                    li
+                      a(href="#")
+                        span Мобильная техника
+                    li
+                      a(href="#") Смартфоны
+                    li
+                      a(href="#") Планшеты
+                    li
+                      a(href="#") Смарт-часы
+                  ul
+                    li
+                      a(href="#")
+                        span Аудиотехника
+                    li
+                      a(href="#") Колонки
+                    li
+                      a(href="#") Аудиосистемы
+                    li
+                      a(href="#") Наушники
+                    li
+                      a(href="#") Колонки
+                  ul
+                    li
+                      a(href="#")
+                        span Заголовок
+                    li
+                      a(href="#") Айтем1
+                    li
+                      a(href="#") Айтем2
+                    li
+                      a(href="#") Айтем3
+                    li
+                      a(href="#") Айтем4
+                    li
+                      a(href="#") Айтем5
+                a.all(href="#") Все товары категории
+              .catalog-list__info-item-img
+                +recommended-card({ "image": "/img/recommended/i_recommended-a001.png", "sale": "Скидки до 25%", "title": "Время звать гостей!", "text": "Покупайте диваны, кресла и стулья со скидками и получайте двойные бонусы", })
+                
+          .catalog-list__info-item(data-target="2")
+            .title Электроника1
+            .catalog-list__info-item-scroll
+              .catalog-list__info-item-content
+                .list
+                  ul
+                    li
+                      a(href="#")
+                        span Мобильная техника
+                    li
+                      a(href="#") Смартфоны
+                    li
+                      a(href="#") Планшеты
+                    li
+                      a(href="#") Смарт-часы
+                  ul
+                    li
+                      a(href="#")
+                        span Аудиотехника
+                    li
+                      a(href="#") Колонки
+                    li
+                      a(href="#") Аудиосистемы
+                    li
+                      a(href="#") Наушники
+                    li
+                      a(href="#") Колонки
+                a.all(href="#") Все товары категории
+              .catalog-list__info-item-img
+                +recommended-card({ 
+                  "image": "/img/recommended/i_recommended-a002.png", 
+                  "sale": "Быстрая доставка", "title": 
+                  "Iphone, Samsung, Xiaomi последних моделей и не только", 
+                  "text": "По самым выгодным ценам у нас в магазине!", 
+                  })
+                
+          .catalog-list__info-item(data-target="3")
+            .title Электроника2
+            .catalog-list__info-item-scroll
+              .catalog-list__info-item-content
+                .list
+                  ul
+                    li
+                      a(href="#")
+                        span Мобильная техника
+                    li
+                      a(href="#") Смартфоны
+                    li
+                      a(href="#") Планшеты
+                    li
+                      a(href="#") Смарт-часы
+                  ul
+                    li
+                      a(href="#")
+                        span Аудиотехника
+                    li
+                      a(href="#") Колонки
+                    li
+                      a(href="#") Аудиосистемы
+                    li
+                      a(href="#") Наушники
+                    li
+                      a(href="#") Колонки
+                a.all(href="#") Все товары категории
+              .catalog-list__info-item-img
+                +recommended-card({ 
+                  "image": "/img/recommended/i_recommended-a003.png", 
+                  "sale": "Скидки до 50%", 
+                  "title": "К Новому году и Рождеству готовы", 
+                  "text": "Праздничные скидки и распродажа товаров!"
+                  })
+         
+                

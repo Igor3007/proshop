@@ -1,1 +1,132 @@
-.footer footer
+include ../../action-panel/action-panel.pug
+include ../../scroller/scroller.pug
+
+footer.footer
+  .footer__container._container
+    .footer__top.top-footer
+      .top-footer__wrapper
+        .top-footer__item.tf-item-name
+          .top-footer__item-logo
+            a(href="./", aria-label="home")
+              i.icon(style="background-image: url(\'./img/icons/ic_logo.svg\')")
+          .top-footer__item-text
+            p «ProShop» — интернет-магазин полезных вещей для дома, офиса и дачи. Здесь вы найдете товары на любой вкус.
+        .top-footer__item.tf-item-menu.is--opened
+          .top-footer__item-heading
+            h4 Интернет-магазин
+            i.icon(style="background-image: url(\'./img/icons/ic_spoiler.svg\')")
+          .top-footer__item-content
+            ul
+              li
+                a(href="#") Каталог
+              li
+                a(href="#") Новогодние скидки
+              li
+                a(href="#") Новинки
+              li
+                a(href="#") Ликвидация остатков
+              li
+                a(href="#") Личный кабинет
+        .top-footer__item.tf-item-menu
+          .top-footer__item-heading
+            h4 Покупателям
+            i.icon(style="background-image: url(\'./img/icons/ic_spoiler.svg\')")
+          .top-footer__item-content
+            ul
+              li
+                a(href="#") О ProShop
+              li
+                a(href="#") Наши магазины
+              li
+                a(href="#") Доставка и оплата
+              li
+                a(href="#") Рассрочка и кредит
+              li
+                a(href="#") Гарантия
+              li
+                a(href="#") Лицензии и сертификаты
+              li
+                a(href="#") Блог
+              li
+                a(href="#") Контакты
+        .top-footer__item.tf-item-menu
+          .top-footer__item-heading
+            h4 Информация
+            i.icon(style="background-image: url(\'./img/icons/ic_spoiler.svg\')")
+          .top-footer__item-content
+            ul
+              li
+                a(href="#") Политика конфиденциальности
+              li
+                a(href="#") Публичная оферта
+              li
+                a(href="#") Вопросы и ответы
+        .top-footer__item.tf-item-contacts
+          .top-footer__item-heading
+            h4 Контакты
+          .top-footer__item-content
+            ul
+              li
+                a(href="tel:+78002001234") +7 (800) 200-12-34
+              li
+                a(href="tel:+74994601234") +7 (499) 460-12-34
+              li
+                a(href="mailto:contact@proshop.ru") contact@proshop.ru
+              li Ежедневно с 9:00 до 22:00
+              li
+                a(href="#") Москва, Волгоградский проспект, 17с1
+              li.get-modal--call Заказать звонок
+              li.get-modal--question Задать вопрос
+            ul.tf-item-contacts__socials
+              li
+                a(href="#")
+                  i.icon(style="background-image: url(\'/img/icons/socials/ic_vk.svg\')")
+              li
+                a(href="#")
+                  i.icon(style="background-image: url(\'/img/icons/socials/ic_instagram.svg\')")
+              li
+                a(href="#")
+                  i.icon(style="background-image: url(\'/img/icons/socials/ic_tiktok.svg\')")
+              li
+                a(href="#")
+                  i.icon(style="background-image: url(\'/img/icons/socials/ic_youtube.svg\')")
+              li
+                a(href="#")
+                  i.icon(style="background-image: url(\'/img/icons/socials/ic_telegram.svg\')")
+              li
+                a(href="#")
+                  i.icon(style="background-image: url(\'/img/icons/socials/ic_whatsapp.svg\')")
+              li
+                a(href="#")
+                  i.icon(style="background-image: url(\'/img/icons/socials/ic_zen.svg\')")
+    .footer__bottom.bottom-footer
+      .bottom-footer__wrapper
+        .bottom-footer__copy.
+          
+          Интернет-магазин ProShop, 2024
+          
+        .bottom-footer__payment
+          ul
+            li
+              img(src="/img/icons/payment/ic_mir.svg", alt="payment")
+            li
+              img(src="/img/icons/payment/ic_mastercard.svg", alt="payment")
+            li
+              img(src="/img/icons/payment/ic_visa.svg", alt="payment")
+            li
+              img(src="/img/icons/payment/ic_sber.svg", alt="payment")
+            li
+              img(src="/img/icons/payment/ic_alfa.svg", alt="payment")
+            li
+              img(src="/img/icons/payment/ic_tinkoff.svg", alt="payment")
+            li
+              img(src="/img/icons/payment/ic_yoomoney.svg", alt="payment")
+            li
+              img(src="/img/icons/payment/ic_halva.svg", alt="payment")
+        .bottom-footer__develop
+          span Разработка и поддержка:
+          |  
+          a(href="https://promicom.ru/", target="_blank") Promicom
+
++action-panel
++scroller

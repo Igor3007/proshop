@@ -1,0 +1,45 @@
+.data-dropdown {
+  position: absolute;
+  left: -24px;
+  z-index: 6;
+
+  padding-top: 20px;
+  min-width: 240px;
+
+  display: none;
+
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 4px 16px 0 #0000001A;
+
+    li {
+
+
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+
+      a {
+        display: block;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #000;
+        transition: .1s ease;
+
+        @media screen and (min-width: 991.98px) {
+          &:hover {
+            color: var(--accent);
+          }
+        }
+      }
+    }
+  }
+}

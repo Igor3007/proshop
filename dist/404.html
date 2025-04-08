@@ -28,79 +28,34 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="prefetch" href="/img/sprites/sprite.svg" as="image" crossorigin>
     <style>@font-face {
-  font-family: 'Involve SemiBold Oblique';
-  src: url("/fonts/involve/subset-Involve-SemiBoldOblique.woff2") format("woff2"), url("/fonts/involve/subset-Involve-SemiBoldOblique.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
+  font-family: Inter;
+  font-display: swap;
+  src: url("/fonts/inter/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Involve Medium Oblique';
-  src: url("/fonts/involve/subset-Involve-MediumOblique.woff2") format("woff2"), url("/fonts/involve/subset-Involve-MediumOblique.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Involve';
-  src: url("/fonts/involve/subset-Involve-SemiBold.woff2") format("woff2"), url("/fonts/involve/subset-Involve-SemiBold.woff") format("woff");
+  font-family: Inter;
+  font-display: swap;
+  src: url("/fonts/inter/Inter-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Involve';
-  src: url("/fonts/involve/subset-Involve-Medium.woff2") format("woff2"), url("/fonts/involve/subset-Involve-Medium.woff") format("woff");
+  font-family: Inter;
+  font-display: swap;
+  src: url("/fonts/inter/Inter-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Involve';
-  src: url("/fonts/involve/subset-Involve-Oblique.woff2") format("woff2"), url("/fonts/involve/subset-Involve-Oblique.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Involve';
-  src: url("/fonts/involve/subset-Involve-Bold.woff2") format("woff2"), url("/fonts/involve/subset-Involve-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Involve Bold Oblique';
-  src: url("/fonts/involve/subset-Involve-BoldOblique.woff2") format("woff2"), url("/fonts/involve/subset-Involve-BoldOblique.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Involve';
-  src: url("/fonts/involve/subset-Involve-Regular.woff2") format("woff2"), url("/fonts/involve/subset-Involve-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("/fonts/montserrat/subset-Montserrat-Regular.woff2") format("woff2"), url("/fonts/montserrat/subset-Montserrat-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("/fonts/montserrat/subset-Montserrat-Medium.woff2") format("woff2"), url("/fonts/montserrat/subset-Montserrat-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("/fonts/montserrat/subset-Montserrat-SemiBold.woff2") format("woff2"), url("/fonts/montserrat/subset-Montserrat-SemiBold.woff") format("woff");
-  font-weight: 600;
+  font-family: Inter;
+  font-display: swap;
+  src: url("/fonts/inter/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 /*# sourceMappingURL=maps/critical-fonts.css.map */
@@ -110,7 +65,328 @@
   </head>
   <body class="perf-no-animation">
     <header> 
-      <div class="header">header</div>
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__top top-header">
+            <div class="top-header__container _container">
+              <div class="top-header__wrapper">
+                <div class="top-header__country country-header">
+                  <div class="country-header__title get-modal--cities"><i class="icon" style="background-image: url('/img/icons/ic_geo.svg')"></i><span class="name">Выберите город</span><i class="icon" style="background-image: url('/img/icons/ic_arrow-dd.svg')"></i></div>
+                </div>
+                <div class="top-header__actions">
+                  <div class="top-header__actions-info info-action">
+                    <div class="info-action__title"><span class="name">Покупателям</span><i class="icon" style="background-image: url('/img/icons/ic_arrow-dd.svg')"></i></div>
+                          <div class="data-dropdown">
+                            <ul>
+                              <li><a href="#">О ProShop</a></li>
+                              <li><a href="#">Наши магазины</a></li>
+                              <li><a href="#">Доставка и оплата</a></li>
+                              <li><a href="#">Рассрочка и кредит</a></li>
+                              <li><a href="#">Гарантия</a></li>
+                              <li><a href="#">Лицензии и сертификаты</a></li>
+                              <li><a href="#">Блог</a></li>
+                              <li><a href="#">Контакты</a></li>
+                            </ul>
+                          </div>
+                  </div>
+                  <div class="top-header__actions-numbers numbers-action">
+                    <div class="numbers-action__title"><i class="icon" style="background-image: url('/img/icons/ic_phone.svg')"></i><a class="name" href="tel:+78002001234">+7 (800) 200-12-34</a><i class="icon" style="background-image: url('/img/icons/ic_arrow-dd.svg')"></i></div>
+                          <div class="data-dropdown">
+                            <ul>
+                              <li><a href="tel:+11111111111">+1 (111) 111-11-11</a></li>
+                              <li><a href="tel:+11111111111">+1 (111) 111-11-11</a></li>
+                              <li><a href="tel:+11111111111">+1 (111) 111-11-11</a></li>
+                            </ul>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__main main-header">
+            <div class="main-header__container _container">
+              <div class="main-header__wrapper">
+                <div class="main-header__actions">
+                  <div class="main-header__menu menu-header">
+                    <div class="menu-header__btn" data-target="menu"><span class="icon"><i></i><i></i><i></i></span></div>
+                  </div>
+                  <div class="main-header__logo"><a href="/" aria-label="home"><i class="icon" style="background-image: url('/img/icons/ic_logo.svg')"></i></a></div>
+                  <div class="main-header__catalog catalog-btn">
+                    <div class="catalog-btn__btn" data-target="catalog"><span class="icon"><i></i><i></i><i></i></span>
+                      <div class="catalog-btn__btn-name">Каталог</div>
+                    </div>
+                  </div>
+                  <div class="main-header__links"><a href="#">Наши магазины</a></div>
+                  <div class="main-header__search">
+                    <div class="search-index" data-target="search">
+                      <form action="#">
+                        <div class="search-index__form">
+                          <div class="search-index__field">
+                            <label class="search-index__input">
+                              <input type="text" name="q" autocomplete="off" placeholder="Найти в каталоге">
+                            </label>
+                            <div class="search-index__btn">
+                              <button class="btn-blue">Найти</button>
+                              <button class="btn-search"><i class="icon" style="background-image: url('./img/icons/ic_search.svg')"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="main-header__info">
+                    <ul>
+                      <li><a href="tel:+78002001234"><i class="icon" style="background-image: url('/img/icons/ic_phone.svg')"></i></a></li>
+                      <li class="get-modal--cities"><a href="#"><i class="icon" style="background-image: url('/img/icons/ic_geo.svg')"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-header__panel">
+                  <button class="panel-custom_i btn-login"><i class="icon" style="background-image: url('./img/icons/ic_user.svg')"></i>Войти</button>
+                  <button class="panel-custom_i btn-select"><i class="icon" style="background-image: url('./img/icons/ic_select.svg')"></i>Избранное</button>
+                  <div class="main-header__cart cart-header">
+                    <button class="panel-custom_i btn-cart"><i class="icon" style="background-image: url('./img/icons/ic_cart.svg')"></i>Корзина</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom bottom-header">
+            <div class="bottom-header__container _container">
+              <div class="bottom-header__wrapper">
+                <ul>
+                  <li><i class="icon" style="background-image: url('/img/icons/ic_sale.svg')"></i><a href="#">Чёрная пятница</a></li>
+                  <li><a href="#">До -40% на все футболки</a></li>
+                  <li><a href="#">Специальные предложения</a></li>
+                  <li><a href="#">Коллекция «Новогодняя»</a></li>
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="#">Ликвидация</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="mobile-menu"></div>
+              <div class="catalog-list" data-window="catalog">
+                <div class="catalog-list__container _container">
+                  <div class="catalog-list__heading">
+                    <div class="catalog-list__heading-back" data-back="back"><i class="icon" style="background-image: url('/img/icons/ic_back.svg')"></i></div>
+                    <div class="search-index">
+                      <form action="#">
+                        <div class="search-index__form">
+                          <div class="search-index__field">
+                            <label class="search-index__input">
+                              <input type="text" name="q" autocomplete="off" placeholder="Найти в каталоге">
+                            </label>
+                            <div class="search-index__btn">
+                              <button class="btn-search"><i class="icon" style="background-image: url('./img/icons/ic_search.svg')"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="catalog-list__heading-close" data-close="close"><i class="icon" style="background-image: url('/img/icons/ic_close.svg')"></i></div>
+                  </div>
+                  <div class="catalog-list__wrapper">
+                    <div class="catalog-list__links">
+                      <ul>
+                        <li class="is-active" data-target="1"><span>Электроника</span><i class="icon" style="background-image: url('/img/icons/ic_chevron-rt.svg')"></i></li>
+                        <li data-target="2"><span>Электроника1</span><i class="icon" style="background-image: url('/img/icons/ic_chevron-rt.svg')"></i></li>
+                        <li data-target="3"><span>Электроника2</span><i class="icon" style="background-image: url('/img/icons/ic_chevron-rt.svg')"></i></li>
+                      </ul>
+                      <div class="catalog-list__links-all"><a href="#">Весь каталог</a></div>
+                    </div>
+                    <div class="catalog-list__info">
+                      <div class="catalog-list__info-item is-active" data-target="1">
+                        <div class="title">Электроника</div>
+                        <div class="catalog-list__info-item-scroll">
+                          <div class="catalog-list__info-item-content">
+                            <div class="list">
+                              <ul>
+                                <li><a href="#"><span>Мобильная техника</span></a></li>
+                                <li><a href="#">Смартфоны</a></li>
+                                <li><a href="#">Планшеты</a></li>
+                                <li><a href="#">Смарт-часы</a></li>
+                              </ul>
+                              <ul>
+                                <li><a href="#"><span>Аудиотехника</span></a></li>
+                                <li><a href="#">Колонки</a></li>
+                                <li><a href="#">Аудиосистемы</a></li>
+                                <li><a href="#">Наушники</a></li>
+                                <li><a href="#">Колонки</a></li>
+                              </ul>
+                              <ul>
+                                <li><a href="#"><span>Заголовок</span></a></li>
+                                <li><a href="#">Айтем1</a></li>
+                                <li><a href="#">Айтем2</a></li>
+                                <li><a href="#">Айтем3</a></li>
+                                <li><a href="#">Айтем4</a></li>
+                                <li><a href="#">Айтем5</a></li>
+                              </ul>
+                            </div><a class="all" href="#">Все товары категории</a>
+                          </div>
+                          <div class="catalog-list__info-item-img">
+                                  <div class="recommended-card">
+                                    <div class="recommended-card__img">
+                                      <picture><img src="/img/recommended/i_recommended-a001.png" alt=""></picture>
+                                    </div>
+                                    <div class="recommended-card__info"><span>Скидки до 25%</span></div>
+                                    <div class="recommended-card__content">
+                                      <h3>Время звать гостей!</h3>
+                                      <p>Покупайте диваны, кресла и стулья со скидками и получайте двойные бонусы</p>
+                                    </div>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-list__info-item" data-target="2">
+                        <div class="title">Электроника1</div>
+                        <div class="catalog-list__info-item-scroll">
+                          <div class="catalog-list__info-item-content">
+                            <div class="list">
+                              <ul>
+                                <li><a href="#"><span>Мобильная техника</span></a></li>
+                                <li><a href="#">Смартфоны</a></li>
+                                <li><a href="#">Планшеты</a></li>
+                                <li><a href="#">Смарт-часы</a></li>
+                              </ul>
+                              <ul>
+                                <li><a href="#"><span>Аудиотехника</span></a></li>
+                                <li><a href="#">Колонки</a></li>
+                                <li><a href="#">Аудиосистемы</a></li>
+                                <li><a href="#">Наушники</a></li>
+                                <li><a href="#">Колонки</a></li>
+                              </ul>
+                            </div><a class="all" href="#">Все товары категории</a>
+                          </div>
+                          <div class="catalog-list__info-item-img">
+                                  <div class="recommended-card">
+                                    <div class="recommended-card__img">
+                                      <picture><img src="/img/recommended/i_recommended-a002.png" alt=""></picture>
+                                    </div>
+                                    <div class="recommended-card__info"><span>Быстрая доставка</span></div>
+                                    <div class="recommended-card__content">
+                                      <h3>Iphone, Samsung, Xiaomi последних моделей и не только</h3>
+                                      <p>По самым выгодным ценам у нас в магазине!</p>
+                                    </div>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-list__info-item" data-target="3">
+                        <div class="title">Электроника2</div>
+                        <div class="catalog-list__info-item-scroll">
+                          <div class="catalog-list__info-item-content">
+                            <div class="list">
+                              <ul>
+                                <li><a href="#"><span>Мобильная техника</span></a></li>
+                                <li><a href="#">Смартфоны</a></li>
+                                <li><a href="#">Планшеты</a></li>
+                                <li><a href="#">Смарт-часы</a></li>
+                              </ul>
+                              <ul>
+                                <li><a href="#"><span>Аудиотехника</span></a></li>
+                                <li><a href="#">Колонки</a></li>
+                                <li><a href="#">Аудиосистемы</a></li>
+                                <li><a href="#">Наушники</a></li>
+                                <li><a href="#">Колонки</a></li>
+                              </ul>
+                            </div><a class="all" href="#">Все товары категории</a>
+                          </div>
+                          <div class="catalog-list__info-item-img">
+                                  <div class="recommended-card">
+                                    <div class="recommended-card__img">
+                                      <picture><img src="/img/recommended/i_recommended-a003.png" alt=""></picture>
+                                    </div>
+                                    <div class="recommended-card__info"><span>Скидки до 50%</span></div>
+                                    <div class="recommended-card__content">
+                                      <h3>К Новому году и Рождеству готовы</h3>
+                                      <p>Праздничные скидки и распродажа товаров!</p>
+                                    </div>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-field" data-window="search">
+                <div class="search-field__container _container">
+                  <div class="search-field__wrapper">
+                    <div class="search-field__heading">
+                      <div class="search-index">
+                        <form action="#">
+                          <div class="search-index__form">
+                            <div class="search-index__field">
+                              <label class="search-index__input">
+                                <input type="text" name="q" autocomplete="off" placeholder="Найти в каталоге">
+                              </label>
+                              <div class="search-index__btn">
+                                <button class="btn-search"><i class="icon" style="background-image: url('./images/icons/ic_search.svg')"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="search-field__heading-close" data-close="close"><i class="icon" style="background-image: url('/img/icons/ic_close.svg')"></i></div>
+                    </div>
+                    <div class="search-field__links">
+                      <div class="search-field__links-search">
+                        <div class="search-field__links-search-name">Часто ищут</div>
+                        <ul>
+                          <li><a href="#">мобильный телефон</a></li>
+                          <li><a href="#">автомобиль</a></li>
+                        </ul>
+                      </div>
+                      <div class="search-field__links-search">
+                        <div class="search-field__links-search-name">Найдено в категориях</div>
+                        <ul>
+                          <li><a href="#">мобил<span>В категории «Электроника»</span></a></li>
+                          <li><a href="#">мобил<span>В категории «Авто и мото»</span></a></li>
+                          <li><a href="#">мобил<span>В категории «Для детей»</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="search-field__show">
+                      <div class="search-field__show-name">Популярные товары</div>
+                      <div class="search-field__show-products">
+                              <div class="simple-card-product">
+                                <div class="simple-card-product__img">
+                                  <picture><a href="single-product.html"><img src="/img/products/i_product-a001.jpg" alt=""></a></picture>
+                                </div>
+                                <div class="simple-card-product__content">
+                                  <div class="simple-card-product__content-name"><a href="single-product.html">Смартфон SY 17</a></div>
+                                  <div class="simple-card-product__content-price">37 800 ₽<span>42 000 ₽</span></div>
+                                </div>
+                              </div>
+                              <div class="simple-card-product">
+                                <div class="simple-card-product__img">
+                                  <picture><a href="single-product.html"><img src="/img/products/i_product-a002.jpg" alt=""></a></picture>
+                                </div>
+                                <div class="simple-card-product__content">
+                                  <div class="simple-card-product__content-name"><a href="single-product.html">Смартфон Nika Premium Синий</a></div>
+                                  <div class="simple-card-product__content-price">50 400 ₽<span></span></div>
+                                </div>
+                              </div>
+                              <div class="simple-card-product">
+                                <div class="simple-card-product__img">
+                                  <picture><a href="single-product.html"><img src="/img/products/i_product-a003.jpg" alt=""></a></picture>
+                                </div>
+                                <div class="simple-card-product__content">
+                                  <div class="simple-card-product__content-name"><a href="single-product.html">Смартфон Nika HR</a></div>
+                                  <div class="simple-card-product__content-price">22 560 ₽<span></span></div>
+                                </div>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="search-field__search">
+                      <button class="btn-blue">Найти</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </header>
     </header>
     <main> 
       <section class="section-page">
@@ -212,7 +488,138 @@
       </section>
     </main>
     <footer>
-      <div class="footer">footer</div>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <div class="footer__top top-footer">
+            <div class="top-footer__wrapper">
+              <div class="top-footer__item tf-item-name">
+                <div class="top-footer__item-logo"><a href="./" aria-label="home"><i class="icon" style="background-image: url('./img/icons/ic_logo.svg')"></i></a></div>
+                <div class="top-footer__item-text">
+                  <p>«ProShop» — интернет-магазин полезных вещей для дома, офиса и дачи. Здесь вы найдете товары на любой вкус.</p>
+                </div>
+              </div>
+              <div class="top-footer__item tf-item-menu is--opened">
+                <div class="top-footer__item-heading">
+                  <h4>Интернет-магазин</h4><i class="icon" style="background-image: url('./img/icons/ic_spoiler.svg')"></i>
+                </div>
+                <div class="top-footer__item-content">
+                  <ul>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Новогодние скидки</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Ликвидация остатков</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-footer__item tf-item-menu">
+                <div class="top-footer__item-heading">
+                  <h4>Покупателям</h4><i class="icon" style="background-image: url('./img/icons/ic_spoiler.svg')"></i>
+                </div>
+                <div class="top-footer__item-content">
+                  <ul>
+                    <li><a href="#">О ProShop</a></li>
+                    <li><a href="#">Наши магазины</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Рассрочка и кредит</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Лицензии и сертификаты</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-footer__item tf-item-menu">
+                <div class="top-footer__item-heading">
+                  <h4>Информация</h4><i class="icon" style="background-image: url('./img/icons/ic_spoiler.svg')"></i>
+                </div>
+                <div class="top-footer__item-content">
+                  <ul>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top-footer__item tf-item-contacts">
+                <div class="top-footer__item-heading">
+                  <h4>Контакты</h4>
+                </div>
+                <div class="top-footer__item-content">
+                  <ul>
+                    <li><a href="tel:+78002001234">+7 (800) 200-12-34</a></li>
+                    <li><a href="tel:+74994601234">+7 (499) 460-12-34</a></li>
+                    <li><a href="mailto:contact@proshop.ru">contact@proshop.ru</a></li>
+                    <li>Ежедневно с 9:00 до 22:00</li>
+                    <li><a href="#">Москва, Волгоградский проспект, 17с1</a></li>
+                    <li class="get-modal--call">Заказать звонок</li>
+                    <li class="get-modal--question">Задать вопрос</li>
+                  </ul>
+                  <ul class="tf-item-contacts__socials">
+                    <li><a href="#"><i class="icon" style="background-image: url('/img/icons/socials/ic_vk.svg')"></i></a></li>
+                    <li><a href="#"><i class="icon" style="background-image: url('/img/icons/socials/ic_instagram.svg')"></i></a></li>
+                    <li><a href="#"><i class="icon" style="background-image: url('/img/icons/socials/ic_tiktok.svg')"></i></a></li>
+                    <li><a href="#"><i class="icon" style="background-image: url('/img/icons/socials/ic_youtube.svg')"></i></a></li>
+                    <li><a href="#"><i class="icon" style="background-image: url('/img/icons/socials/ic_telegram.svg')"></i></a></li>
+                    <li><a href="#"><i class="icon" style="background-image: url('/img/icons/socials/ic_whatsapp.svg')"></i></a></li>
+                    <li><a href="#"><i class="icon" style="background-image: url('/img/icons/socials/ic_zen.svg')"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__wrapper">
+              <div class="bottom-footer__copy">
+                Интернет-магазин ProShop, 2024
+                
+              </div>
+              <div class="bottom-footer__payment">
+                <ul>
+                  <li><img src="/img/icons/payment/ic_mir.svg" alt="payment"></li>
+                  <li><img src="/img/icons/payment/ic_mastercard.svg" alt="payment"></li>
+                  <li><img src="/img/icons/payment/ic_visa.svg" alt="payment"></li>
+                  <li><img src="/img/icons/payment/ic_sber.svg" alt="payment"></li>
+                  <li><img src="/img/icons/payment/ic_alfa.svg" alt="payment"></li>
+                  <li><img src="/img/icons/payment/ic_tinkoff.svg" alt="payment"></li>
+                  <li><img src="/img/icons/payment/ic_yoomoney.svg" alt="payment"></li>
+                  <li><img src="/img/icons/payment/ic_halva.svg" alt="payment"></li>
+                </ul>
+              </div>
+              <div class="bottom-footer__develop"><span>Разработка и поддержка:</span> <a href="https://promicom.ru/" target="_blank">Promicom</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+            <div class="action-panel">
+              <div class="_container action-panel__container">
+                <div class="action-panel__config config-action">
+                  <div class="config-action__btn config-catalog" data-target="catalog">
+                    <div class="config-action__icon"><i class="icon" style="background-image: url('/img/icons/ic_a-catalog.svg')"></i></div>
+                    <div class="config-action__name">Каталог</div>
+                  </div>
+                  <div class="config-action__btn config-login" data-target="login">
+                    <div class="config-action__icon"><i class="icon" style="background-image: url('/img/icons/ic_a-login.svg')"></i></div>
+                    <div class="config-action__name">Войти</div>
+                  </div>
+                  <div class="config-action__btn config-favourite" data-target="favourite">
+                    <div class="config-action__icon"><i class="icon" style="background-image: url('/img/icons/ic_a-favourite.svg')"></i>
+                      <div class="count"><span>0</span></div>
+                    </div>
+                    <div class="config-action__name">Избранное</div>
+                  </div>
+                  <div class="config-action__btn config-cart" data-target="cart">
+                    <div class="config-action__icon"><i class="icon" style="background-image: url('/img/icons/ic_a-cart.svg')"></i>
+                      <div class="count"><span>0</span></div>
+                    </div>
+                    <div class="config-action__name">Корзина</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scroller is-hidden">
+              <div class="scroller__btn"><i class="icon" style="background-image: url('/img/icons/ic_arrow-rt.svg')"></i></div>
+            </div>
     </footer>
   </body>
   <script src="/js/vendor.js"> </script>

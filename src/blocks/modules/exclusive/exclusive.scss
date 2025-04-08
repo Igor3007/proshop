@@ -1,0 +1,43 @@
+.exclusive {
+    overflow: hidden;
+
+    @media screen and (min-width: 991.98px) {
+        margin-bottom: 0;
+    }
+
+
+    .swiper[data-slider="exclusive"],
+    .swiper[data-slider="in-stock"] {
+        overflow: initial;
+        padding-bottom: 32px;
+
+        .swiper-slide {
+            height: auto;
+            max-width: 298px;
+
+            @media screen and (min-width: 991.98px) {
+                max-width: 460px;
+            }
+        }
+
+        .swiper-scrollbar {
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+
+            @media screen and (min-width: 991.98px) {
+                bottom: 100px;
+            }
+        }
+
+    }
+
+    h2 {
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 991.98px) {
+            margin-bottom: 32px;
+        }
+    }
+
+}

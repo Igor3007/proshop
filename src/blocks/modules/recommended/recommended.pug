@@ -1,0 +1,44 @@
+include ../recommended-card/recommended-card.pug
+
+mixin recommended
+  -
+    const recomendet = [
+      { "image": "/img/recommended/i_recommended-a001.png", 
+        "sale": "Скидки до 25%", 
+        "title": "Время звать гостей!", 
+        "text": "Покупайте диваны, кресла и стулья со скидками и получайте двойные бонусы", 
+      },
+      { "image": "/img/recommended/i_recommended-a002.png", 
+        "sale": "Быстрая доставка", 
+        "title": "Iphone, Samsung, Xiaomi последних моделей и не только", 
+        "text": "По самым выгодным ценам у нас в магазине!", 
+      },
+      { "image": "/img/recommended/i_recommended-a003.png", 
+        "sale": "Скидки до 50%", 
+        "title": "К Новому годуи Рождеству готовы", 
+        "text": "Праздничные скидки и распродажа товаров!", 
+      },
+      { "image": "/img/recommended/i_recommended-a004.png", 
+      "sale": "Скидки до 50%", 
+      "title": "Наборы посуды и столовых приборов", 
+      "text": "Лучшая посуда для кухни и гостиной по самым выгодным ценам!", 
+      }
+    ]
+  section.recommended
+    .recommended__container._container
+      .recommended__heading
+        h2 Рекомендуем сегодня
+        p Скидки, акции, ликвидация прошлых коллекций и многое другое. У нас в интернет-магазине «ProShop» вы всегда найдёте что-то полезное и нужно для себя и своих близких!
+      .recommended__slider
+        .swiper(data-slider="recommended")
+          .swiper-wrapper
+            each item in recomendet
+              .swiper-slide
+                +recommended-card(item)
+             
+              
+          .swiper-scrollbar(data-swiper-scrollbar="recommended-sb")
+          .swiper-button-prev(data-swiper-btn="recommended-prev")
+            span(style="background-image: url(\'/img/icons/ic_arrow-rt.svg\')")
+          .swiper-button-next(data-swiper-btn="recommended-next")
+            span(style="background-image: url(\'/img/icons/ic_arrow-rt.svg\')")

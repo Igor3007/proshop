@@ -1,0 +1,106 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: #FFF;
+    box-shadow: 0 2px 32px 0 #0000001A;
+    display: none;
+
+    &.is--active {
+        display: block;
+        animation: showBlockLtoT 0.5s ease forwards;
+
+        @media screen and (min-width: 991.98px) {
+            display: none;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 16px 0 32px;
+
+        .search-index {
+            flex: 1;
+        }
+
+        &-close {
+            .icon {
+                display: block;
+                min-width: 20px;
+                width: 20px;
+                height: 20px;
+                background-size: 12px;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: 0.1s ease;
+            }
+        }
+    }
+
+    &__catalog {
+        &-name {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #000;
+            margin-bottom: 16px;
+        }
+
+        &-list {
+            height: calc(var(--vh, 1vh) * 100 - 180px);
+            overflow: auto;
+
+            &-cloned {
+                padding: 16px 0;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #F0F0F0;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    li {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        &:has(.icon) {
+                            a {
+                                font-weight: 500;
+                            }
+                        }
+
+                        .icon {
+                            display: block;
+                            min-width: 24px;
+                            width: 24px;
+                            height: 24px;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            transition: 0.1s ease;
+                        }
+
+                        a {
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

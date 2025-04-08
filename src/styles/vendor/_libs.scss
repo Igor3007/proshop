@@ -1,9 +1,4 @@
 @import "import/normalize";
-
 @import "import/select";
-@import "./import/lightgallery.scss";
-
-
-@import "./import/splide-core.min.scss";
-@import "./import/splide-default.min.scss";
-//@import "./import/slick.scss";
+@import "import/swiper";
+@import "import/swiper-actions.scss";

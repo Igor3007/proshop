@@ -1,0 +1,53 @@
+.tabs-custom {
+    &__tabs {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        overflow-x: auto;
+    }
+
+    &__tab {
+        padding: 10px 20px;
+        border: 1px solid #CCCCCC;
+        border-radius: 24px;
+        background: #FFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .1s ease;
+
+        @media screen and (min-width: 991.98px) {
+            &:hover {
+                border-color: transparent;
+                background: #F7F7F7;
+            }
+        }
+
+        &.active-tab {
+            background: #3D3D3D;
+            border-color: #3D3D3D;
+
+            span {
+                color: #FFF;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            white-space: nowrap;
+        }
+    }
+
+    &__tab-content {
+        display: none;
+
+        &.active-content {
+            display: block;
+            animation: fadeIn 0.5s ease forwards;
+        }
+    }
+}

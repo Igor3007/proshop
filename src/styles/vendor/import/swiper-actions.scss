@@ -1,0 +1,69 @@
+.swiper {
+  .swiper-scrollbar {
+    background: #CCCCCC;
+    height: 1px !important;
+    transition: .1s ease;
+    cursor: grab;
+    @media screen and (min-width: 991.98px) {
+      &:hover {
+        .swiper-scrollbar-drag {
+          height: 3px !important;
+          top: -1px;
+        }
+      }
+    }
+
+    &-drag {
+      background: #858585;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    min-width: 48px;
+    width: 48px;
+    height: 48px;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #F7F7F7;
+    display: none;
+    @media screen and (min-width: 991.98px) {
+      display: flex;
+    }
+
+    span {
+      display: block;
+      min-width: 22px;
+      width: 22px;
+      height: 10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.1s ease;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &-button-prev {
+    left: initial;
+    top: calc(-48px - 32px);
+    right: calc(0px + 60px);
+    margin: 0;
+
+    span {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &-button-next {
+    left: initial;
+    top: calc(-48px - 32px);
+    right: 0;
+    margin: 0;
+  }
+}

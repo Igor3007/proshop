@@ -3,14 +3,33 @@ extends layouts/main
 block variables
   include ../data/data.pug
   - const title = "Proshop"
+
+include ../blocks/modules/banner/banner.pug
+include ../blocks/modules/format-text/format-text.pug
+include ../blocks/modules/idea/idea.pug
+include ../blocks/modules/exclusive/exclusive.pug
+include ../blocks/modules/recommended/recommended.pug
+include ../blocks/modules/popular-category/popular-category.pug
  
 
 block main
 
-  div proshop
+  +banner
+  +popular-category
+  +exclusive({
+    title: 'Лучшие предложения месяца'
+  })
+  +recommended
+  +exclusive({
+    title: 'Товары в наличии'
+  })
+  +idea
+  +format-text
+  
 
  
  
 block scripts
   script(src="/js/vendor.js") 
   script(src="/js/common.js") 
+  script(src="/js/catalog.js") 
