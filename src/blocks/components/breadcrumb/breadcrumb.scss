@@ -47,19 +47,16 @@
         }
 
         &::after {
-            content: '';
+            content: '—';
             margin: 0 rem(4);
             color: #7A808D;
             display: inline-block;
             border-radius: 50%;
             position: relative;
             font-size: 14px;
-            width: 3px;
-            height: 3px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-color: var(--accent);
-            top: -2px;
+
+
+
 
             @media screen and (min-width: $w576) {
                 margin: 0 rem(6);

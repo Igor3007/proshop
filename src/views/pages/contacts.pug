@@ -1,0 +1,68 @@
+extends ../layouts/main
+
+block variables
+  include ../../data/data.pug
+  - const title = "Proshop - Товары"
+ 
+
+block main
+
+  section.contacts
+    .contacts__container._container
+      h1 Контакты компании
+      .contacts__wrapper
+        .contacts__content
+          .contacts__content-info
+            .contacts__content-info-heading
+              h3 Контактная информация
+              .contacts__content-info-heading-number
+                p Горячая линия для заказов и вопросов:
+                a.name(href="tel:+78002001234") +7 (800) 200-12-34
+            .contacts__content-info-additional.additional-info
+              .additional-info__title.
+                
+                Другая информация
+                
+              .additional-info__cards
+                .additional-info__card
+                  i.icon(style="background-image: url(\'/img/icons/contacts/ic_address.svg\')")
+                  .additional-info__card-content
+                    p Адрес
+                    a(href="#", target="_blank") Москва, Волгоградский проспект, корпус 1, этаж 3
+                .additional-info__card
+                  i.icon(style="background-image: url(\'/img/icons/contacts/ic_time.svg\')")
+                  .additional-info__card-content
+                    p Время работы
+                    p Ежедневно с 9:00 до 21:00
+                .additional-info__card
+                  i.icon(style="background-image: url(\'/img/icons/contacts/ic_mail.svg\')")
+                  .additional-info__card-content.email
+                    p Email
+                    a(href="mailto:contact@baffleacoustic.ru") contact@baffleacoustic.ru
+          .contacts__content-form
+            .contacts__content-form-heading
+              h3 Свяжитесь с нами
+              p Наш менеджер скоро свяжется с вами для уточнения деталей.
+            form.v-form(action="#", method="post")
+              .contacts__content-form-field.form-field
+                input(type="text", aria-label="name", required, placeholder="Ваше имя", maxlength="64")
+                input(type="text", aria-label="phone", required, placeholder="Телефон", data-maska="+# (###) ###-##-##")
+                input(type="text", aria-label="mail", placeholder="Email (необязательно)", maxlength="64")
+              .form-field
+                textarea(name, aria-label="text", placeholder="Сообщение", maxlength="360")
+              .contacts__content-form-policy
+                button.btn-blue.btn-submit Отправить
+                .contacts__content-form-policy-link
+                  | Нажимая кнопку, вы принимаете условия
+
+                  a(href="#") Политики конфиденциальности
+        .contacts__info
+          h3 Наши реквизиты
+          ul
+            li Наименование организации: ООО «ДИВАН БАЙ»
+            li Юридический адрес: 220076, г. Минск, ул. Огинского, 6 пом. 13 - 9
+            li Р/с: BY71MTBK30120001093300092495
+            li УНП: 193109186
+            li Директор: Директор Савченко И.А
+            li БИК: MTBKBY22
+            li ЗАО МТБанк г. Минск, ул. Толстого, 10

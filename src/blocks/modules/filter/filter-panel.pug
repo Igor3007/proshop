@@ -1,0 +1,110 @@
+mixin category-filter
+  .category-filter(data-window="filter", data-filter-container="filter")
+    .category-filter__heading
+      .category-filter__heading-wrapper
+        .category-filter__heading-title Фильтры
+        .category-filter__heading-close(data-close="close")
+          i
+          i
+    .category-filter__body
+      .category-filter__filter
+        form(action="#", method="GET")
+          .category-filter__props
+            .category-filter__item(data-filter-block="all")
+              .filter-properties
+                .filter-properties__head
+                  .filter-properties__title
+                .filter-products__button.btn-stock
+                  .btn-stock__tumbler
+                    span
+                  | В наличии
+
+            .category-filter__item(data-filter-block="price")
+              .filter-properties
+                .filter-properties__head
+                  .filter-properties__title Цена, ₽
+                .filter-properties__list
+                  .filter-properties__range
+                    .filter-properties__row
+                      .filter-properties__input
+                        input(type="text", name="filter[price][min]", placeholder, value="550", data-price-range="min", aria-label)
+                      .filter-properties__input
+                        input(type="text", name="filter[price][max]", placeholder, value="15550", data-price-range="max", aria-label)
+                    .filter-properties__slider
+                      .slider#price-slider(se-min="550", se-step="1", se-min-value="550", se-max-value="15550", se-max="20550")
+                        .slider-touch-left
+                          span
+                        .slider-touch-right
+                          span
+                        .slider-line
+                          span
+            .category-filter__item(data-filter-block="color")
+              .filter-properties
+                .filter-properties__head
+                  .filter-properties__title Цвет
+                .filter-properties__list(data-filter="color")
+                  ul
+                    li
+                      label.checkbox
+                        input#color_white(type="checkbox", name="filter[color][]", value="white")
+                        span.checkbox__elem
+                        span.checkbox__text Белый
+                    li
+                      label.checkbox
+                        input#color_ral(type="checkbox", name="filter[color][]", value="ral")
+                        span.checkbox__elem
+                        span.checkbox__text RAL (цветной)
+            .category-filter__item(data-filter-block="form")
+              .filter-properties
+                .filter-properties__head
+                  .filter-properties__title Форма
+                .filter-properties__list(data-filter="form")
+                  ul
+                    li
+                      label.checkbox
+                        input#form_square(type="checkbox", name="filter[form][]", value="square")
+                        span.checkbox__elem
+                        span.checkbox__text Квадрат
+                    li
+                      label.checkbox
+                        input#form_rectangle(type="checkbox", name="filter[form][]", value="rectangle")
+                        span.checkbox__elem
+                        span.checkbox__text Прямоугольник
+                    li
+                      label.checkbox
+                        input#form_circle(type="checkbox", name="filter[form][]", value="circle")
+                        span.checkbox__elem
+                        span.checkbox__text Круг
+                    li
+                      label.checkbox
+                        input#form_hexagon(type="checkbox", name="filter[form][]", value="hexagon")
+                        span.checkbox__elem
+                        span.checkbox__text Шестиугольник
+                    li
+                      label.checkbox
+                        input#form_triangle(type="checkbox", name="filter[form][]", value="triangle")
+                        span.checkbox__elem
+                        span.checkbox__text Треугольник
+                    li
+                      label.checkbox
+                        input#form_el1(type="checkbox", name="filter[form][]", value="el1")
+                        span.checkbox__elem
+                        span.checkbox__text element1
+                    li
+                      label.checkbox
+                        input#form_el2(type="checkbox", name="filter[form][]", value="el2")
+                        span.checkbox__elem
+                        span.checkbox__text element2
+                    li
+                      label.checkbox
+                        input#form_el3(type="checkbox", name="filter[form][]", value="el3")
+                        span.checkbox__elem
+                        span.checkbox__text element3
+          .category-filter__submit
+            .category-filter__submit-wrapper
+              .category-filter__apply(data-filter="apply")
+                button.btn-blue Применить фильтры
+              .category-filter__clear(data-filter="clear")
+                small
+                  | Очистить 
+                  span фильтры

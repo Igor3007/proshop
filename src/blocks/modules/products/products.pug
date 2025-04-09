@@ -1,23 +1,38 @@
+include ../product-card/product-card.pug
+include ../filter/filter-panel.pug
+include ../../components/breadcrumb/breadcrumb.pug
+
 mixin products
   section.products
     .products__container._container
-      h1 Акустические панели
+
+      +breadcrumb([
+        'Главная',
+        'Каталог',
+        'Акустические панели',
+        'Акустическая панель Квадрат, белый',
+      ])
+     
+      .products__h1:  h1 Электроника
       .products__filter.filter-products
         .filter-products__buttons
-          .filter-products__button.btn-filter(data-target="filter")
-            i.icon(style="background-image: url(\'/images/icons/ic_filter.svg\')")
+          .filter-products__button.btn-filter(data-filter-id="all")
+            i.icon(style="background-image: url(\'/img/icons/ic_filter.svg\')")
             | Фильтры
 
-          .filter-products__button.
+          .filter-products__button(data-filter-id="price").
+            
             Цена
             
-          .filter-products__button.
+          .filter-products__button(data-filter-id="color").
+            
             Цвет
             
-          .filter-products__button.
+          .filter-products__button(data-filter-id="form").
+            
             Форма
             
-          .filter-products__button.btn-stock
+          .filter-products__button.btn-stock(data-target-block="true")
             .btn-stock__tumbler
               span
             | В наличии
@@ -27,13 +42,36 @@ mixin products
             Найдено 14
             
         .filter-products__default
-          .filter-products__default-value Сначала популярные
-          i.icon(style="background-image: url(\'/images/icons/ic_arrow-dd.svg\')")
+          .filter-products__default-wrapper
+            .filter-products__default-value Сначала популярные
+            i.icon(style="background-image: url(\'/img/icons/ic_arrow-dd.svg\')")
+          .data-dropdown
+            ul
+              li Сначала цветные
+              li Сначала дешевые
+              li Сначала дорогие
       .products__cards
         +product-card
         +product-card--2
         +product-card--3
+        +product-card
+        +product-card--2
+        +product-card--3
+        +product-card
+        +product-card--2
+        +product-card--3
+        +product-card
+        +product-card--2
+        +product-card--3
+        +product-card
+        +product-card--2
+        +product-card--3
+        +product-card
+        +product-card--2
+        +product-card--3
+        +product-card
+        +product-card--2
         
         
     
-    @@include('html/components/filter/filter-panel.html')
+    +category-filter

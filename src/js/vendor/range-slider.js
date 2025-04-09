@@ -59,9 +59,8 @@ var ZBRangeSlider = function (id) {
 
     self.setMinValue = function (minValue) {
         var ratio = ((minValue - min) / (max - min));
-        var vall = Math.ceil(ratio * (slider.offsetWidth - (touchLeft.offsetWidth + normalizeFact)))
-        touchLeft.style.left = (vall > 0 ? vall : 0) + 'px';
-        lineSpan.style.marginLeft = (touchLeft.offsetLeft > 0 ? touchLeft.offsetLeft : 0) + 'px';
+        touchLeft.style.left = Math.ceil(ratio * (slider.offsetWidth - (touchLeft.offsetWidth + normalizeFact))) + 'px';
+        lineSpan.style.marginLeft = touchLeft.offsetLeft + 'px';
         lineSpan.style.width = (touchRight.offsetLeft - touchLeft.offsetLeft) + 'px';
         slider.setAttribute('se-min-value', minValue);
     }
@@ -188,7 +187,7 @@ var ZBRangeSlider = function (id) {
         var minValue = minValue * (max - min) + min;
         var maxValue = maxValue * (max - min) + min;
 
-
+        console.log(step);
         if (step !== 0.0) {
             var multi = Math.floor((minValue / step));
             minValue = step * multi;

@@ -10,3 +10,87 @@
 // @import './amimates/fade-drop-filter';
 @import './amimates/fade-drop-filter';
 @import './amimates/motion';
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        transform: scaleY(0.1) rotateX(45deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    100% {
+        transform: scaleY(1) rotateX(0deg);
+        opacity: 1;
+        transform-origin: top;
+    }
+}
+
+@keyframes dropdownAnimationNScale {
+    0% {
+        transform: scaleY(0.85);
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+        transform-origin: top;
+    }
+}
+
+@keyframes showBlockLtoT {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showBlockRtoT {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

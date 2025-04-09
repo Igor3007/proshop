@@ -31,6 +31,12 @@
          display: block;
          animation: fadeInOverlay 0.5s ease forwards;
      }
+
+
+ }
+
+ [data-observ].b-active {
+     z-index: 99;
  }
 
  .scroller {

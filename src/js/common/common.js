@@ -625,15 +625,15 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("b--open");
     }
 
-    actionButtons.forEach((button) => {
-        button.addEventListener('click', function (event) {
-            event.stopPropagation();
-            const target = button.getAttribute('data-target');
+    // actionButtons.forEach((button) => {
+    //     button.addEventListener('click', function (event) {
+    //         event.stopPropagation();
+    //         const target = button.getAttribute('data-target');
 
-            button.classList.toggle('is--active');
-            toggleWindow(target);
-        });
-    });
+    //         button.classList.toggle('is--active');
+    //         toggleWindow(target);
+    //     });
+    // });
 
     searchInputs.forEach((searchInput) => {
         searchInput.addEventListener('click', function (event) {

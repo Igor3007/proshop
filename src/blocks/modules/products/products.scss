@@ -1,0 +1,234 @@
+.products {
+  overflow: initial;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: $default;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 991.98px) {
+      font-size: 44px;
+      line-height: 64px;
+    }
+  }
+
+  .filter-products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 991.98px) {
+      margin-bottom: 32px;
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 10px 24px;
+      border-radius: 24px;
+      border: 1px solid transparent;
+      background: #F7F7F7;
+
+      white-space: nowrap;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $default;
+      cursor: pointer;
+
+      @media screen and (min-width: 991.98px) {
+        &:hover {
+          background: rgba(204, 204, 204, 0.3);
+        }
+      }
+
+      &.btn-filter {
+        color: #FFF;
+        background: $custom;
+
+        @media screen and (min-width: 991.98px) {
+          &:hover {
+            opacity: .9;
+            background-color: var(--accent);
+          }
+        }
+
+        .icon {
+          display: block;
+          min-width: 20px;
+          width: 20px;
+          height: 20px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: 0.1s ease;
+        }
+      }
+
+      &.btn-stock {
+        padding: 10px 16px 10px 10px;
+        border-color: #CCCCCC;
+        background: #FFF;
+
+        @media screen and (min-width: 991.98px) {
+          &:hover {
+            border-color: transparent;
+          }
+        }
+
+        .btn-stock__tumbler {
+          min-width: 40px;
+          width: 40px;
+          height: 20px;
+          background-color: #CCCCCC;
+          border-radius: 20px;
+          position: relative;
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 2px;
+            min-width: 12px;
+            width: 12px;
+            height: 12px;
+            background: #FFF;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            transition: left 0.3s ease;
+          }
+        }
+
+        &.active {
+          border-color: $custom;
+          background: #FFF;
+          color: $default;
+
+          .btn-stock__tumbler {
+            background: $custom;
+
+            span {
+              left: calc(100% - 14px);
+            }
+          }
+        }
+      }
+
+      &.active {
+        color: #FFF;
+        background: $custom;
+      }
+    }
+
+    &__result {
+      white-space: nowrap;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #525252;
+      margin-left: 16px;
+    }
+
+    &__default {
+      position: relative;
+
+      &:hover {
+        //.data-dropdown {
+        //  display: block;
+        //  animation: dropdownAnimationNScale 0.5s ease forwards;
+        //}
+
+      }
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      &-value {
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $default;
+      }
+
+      .icon {
+        display: block;
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.1s ease;
+      }
+
+      .data-dropdown {}
+    }
+  }
+
+
+  &__cards {
+    display: grid;
+    gap: 24px;
+
+    @media screen and (min-width: 767.98px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1199.98px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px 0;
+    }
+  }
+
+  .product-card {
+    position: relative;
+
+    @media screen and (min-width: 991.98px) {
+      border-radius: 16px 16px 0 0;
+
+      &:hover {
+        .product-card__btns {
+          display: flex;
+          animation: none;
+        }
+      }
+    }
+
+    &__btns {
+      @media screen and (min-width: 991.98px) {
+        display: none;
+        padding: 0 24px 24px;
+        border-radius: 0 0 16px 16px;
+        background: #F7F7F7;
+        box-shadow: 0 2px 32px 0 rgba(0, 0, 0, 0.1019607843);
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+      }
+
+    }
+  }
+}
