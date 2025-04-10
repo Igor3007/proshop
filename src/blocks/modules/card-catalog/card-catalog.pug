@@ -1,0 +1,6 @@
+mixin card-catalog(data)
+    .card-catalog
+        .card-catalog__image
+            a(href='#'): +picture(data.image)
+        .card-catalog__title
+            a(href='#')= data.title

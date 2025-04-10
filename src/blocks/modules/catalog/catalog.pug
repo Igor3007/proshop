@@ -1,0 +1,71 @@
+include ../../components/breadcrumb/breadcrumb.pug
+include ../../modules/popular-category/popular-category.pug
+
+-
+    const catalogList = [
+        { 
+            "image": "/img/catalog/1.jpg", 
+            "title": "Спорт и отдых" 
+        },
+        { 
+            "image": "/img/catalog/2.jpg", 
+            "title": "Косметика" 
+        },
+        { 
+            "image": "/img/catalog/3.jpg", 
+            "title": "Обувь" 
+        },
+        { 
+            "image": "/img/catalog/4.jpg", 
+            "title": "Одежда" 
+        },
+        { 
+            "image": "/img/catalog/5.jpg", 
+            "title": "Электроника" 
+        },
+        { 
+            "image": "/img/catalog/6.jpg", 
+            "title": "Стройматериалы" 
+        },
+        { 
+            "image": "/img/catalog/7.jpg", 
+            "title": "Товары для дома" 
+        },
+        { 
+            "image": "/img/catalog/8.jpg", 
+            "title": "Творчество" 
+        },
+        { 
+            "image": "/img/catalog/9.jpg", 
+            "title": "Авто и мото" 
+        },
+        { 
+            "image": "/img/catalog/10.jpg", 
+            "title": "Мебель" 
+        },
+        { 
+            "image": "/img/catalog/11.jpg", 
+            "title": "Аксессуары" 
+        },
+        { 
+            "image": "/img/catalog/12.jpg", 
+            "title": "Для детей" 
+        },
+    ]
+
+mixin catalog
+    section.section-catalog
+        ._container
+            .catalog
+                .catalog__breadcrumbs
+                    +breadcrumb([
+                        'Интернет-магазин ProShop',
+                        'Каталог',
+                    ])
+
+                .catalog__h1
+                    h1 Каталог товаров
+
+                .catalog__list
+                    each item in catalogList
+                        .catalog__item: +popular-category-card-gray(item)
